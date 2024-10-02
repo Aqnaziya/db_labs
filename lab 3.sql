@@ -100,7 +100,7 @@ where city = 'Almaty';
 select name
 from departments
 where budget > 60000
-order by budget asc, code desc;
+order by budget, code desc;
 
 update departments
 set budget = budget * 0.9
