@@ -34,6 +34,7 @@ insert into Boxes (code, contents, value, warehouse) values
 ('P2T6', 'Scissors', 150, 2),
 ('TU55', 'Papers', 90, 5);
 
+-- 1
 select * from Warehouses;
 
 select *
@@ -47,10 +48,11 @@ select warehouse, count(*)
 from boxes
 group by warehouse;
 
+-- error
 select warehouse, count(warehouse)
 from boxes
-where warehouse > 2
-group by warehouse;
+group by warehouse
+having count(warehouse) > 2;
 
 insert into warehouses (local, capacity) values
 ('New York', 3);
