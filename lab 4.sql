@@ -37,6 +37,7 @@ insert into Boxes (code, contents, value, warehouse) values
 -- 1
 select * from Warehouses;
 
+--2
 select *
 from boxes
 where value > 150;
