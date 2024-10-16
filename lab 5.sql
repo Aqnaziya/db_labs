@@ -3,7 +3,7 @@ create database lab5;
 drop table customers;
 create table customers (
     customer_id integer,
-    customer_name varchar(255),
+    cust_name varchar(255),
     city varchar(255),
     grade integer,
     salesman_id integer
