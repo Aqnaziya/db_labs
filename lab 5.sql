@@ -1,6 +1,6 @@
 create database lab5;
 
-drop table if exists customers;
+drop table customers;
 create table customers (
     customer_id integer,
     cust_name varchar(255),
