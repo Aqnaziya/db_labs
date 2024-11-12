@@ -40,7 +40,7 @@ drop index if exists name_employees;
 create index name_employees on employees (name, surname);
 
 -- 3
--- SELECT * FROM employees WHERE salary < value1 AND salary > value2;
+-- SELECT * FROM employees WHERE salary < value1 AND salary > value2
 drop index if exists new_salary;
 create unique index new_salary on employees (salary);
 --where salary < value1 and salary > value2;
