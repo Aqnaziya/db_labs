@@ -89,6 +89,7 @@ create view salesmans_num as
     from salesman
     group by city;
 
+
 -- 8. Create a view that shows each salesman with more than one customer
 CREATE VIEW salesmen_with_multiple_customers AS
 SELECT s.name AS salesman_name
