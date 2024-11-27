@@ -8,7 +8,7 @@ end; $$
 language plpgsql;
 select * from increase_value(10);
 
--- 2. Create a stored procedure compare_numbers that takes two
+-- 2 Create a stored procedure compare_numbers that takes two
 -- integers and returns 'Greater', 'Equal', or ‘Lesser' as an out
 -- parameter, depending on the comparison result of these two numbers
 create or replace function compare_numbers (a integer, b integer)
